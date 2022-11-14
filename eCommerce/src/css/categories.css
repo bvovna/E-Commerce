@@ -1,0 +1,19 @@
+.categories{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.category{
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    margin: 1em;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+  }
