@@ -61,3 +61,23 @@ body{
   top: 1em;
   right: 1em;
 }
+
+.cart__item{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 20vh;
+  padding: 2em;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.cart__img{
+  height: 100%;
+  padding: 1em;
+}
+
+.delete__item{
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+}

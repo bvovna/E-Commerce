@@ -2,9 +2,9 @@ header{
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    background: #679436;
-    color: #EBF2FA;
-    font-family: 'Montserrat', 'sans-serif';
+    background: #edae49;
+    color: #202020;
+    font-family: 'Roboto', 'sans-serif';
   }
   
   .header__title{
@@ -13,6 +13,7 @@ header{
 
   .cart__icon{
     padding: 1em;
+    font-size: 1.5rem;
   }
 
   .link{

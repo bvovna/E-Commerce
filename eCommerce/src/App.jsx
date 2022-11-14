@@ -1,39 +1,25 @@
 import React, {useState, useEffect} from "react";
 import {BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom';
 import Cart from './pages/Cart'
-import Categories from './Categories'
-import Header from './Header'
+import Categories from './components/Categories'
+import Header from './components/Header'
 import "./styles.css";
-import Electronics from "./pages/electronics/Electronics";
+import Electronics from "./pages/Electronics";
+import Jewelery from "./pages/Jewelery";
+import MensClothing from './pages/MensClothing'
+import WomensClothing from './pages/WomensClothing'
 
 export default function App() {
-  const [categories, setCategories] = useState([])
-  const [allProductsData, setAllProductsData] = useState([])
-  
-  
-    useEffect(() => {
-      fetch('https://fakestoreapi.com/products/categories')
-            .then(res=>res.json())
-            .then(json=>setCategories(json))
-      fetch('https://fakestoreapi.com/products')
-          .then(res=>res.json())
-          .then(json=>setAllProductsData(json))
-    }, [])
-
-    const electronicsItems = allProductsData.filter(item => {
-      if(item.category ==="electronics"){
-        return item
-      }
-    })
-
-    
       return (
         <Router>
             <Header />
             <Routes>
-              <Route exact path="/" element={<Categories categories={categories}/>}/>
+              <Route exact path="/" element={<Categories />}/>
               <Route path="/cart" element={<Cart/>}/>
-              <Route path="/electronics" element={<Electronics electronicsItems={electronicsItems}/>}/>
+              <Route path="/electronics" element={<Electronics />}/>
+              <Route path="/jewelery" element={<Jewelery />}/>
+              <Route path="/mensclothing" element={<MensClothing/>}/>
+              <Route path="/womensclothing" element={<WomensClothing/>}/>
             </Routes>
         </Router>
         );

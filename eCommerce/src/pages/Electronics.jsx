@@ -2,10 +2,10 @@ import React, {useContext} from "react";
 import CategoryItem from "../components/CategoryItem";
 import { Context } from "../Context";
 
-export default function Jewelery(){
+export default function Electronics(){
 
-    const {mensClothingItems} = useContext(Context)
-    const renderItems = mensClothingItems.map((item, index) => {
+    const {electronicsItems} = useContext(Context)
+    const renderItems = electronicsItems.map((item, index) => {
         return (
             <CategoryItem key={index} item={item}/>
         )
