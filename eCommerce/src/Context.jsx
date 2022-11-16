@@ -83,6 +83,10 @@ function ContextProvider({children}) {
         }
       })
 
+      function emptyCart() {
+        setCartItems([])
+    }
+
     return (
         <Context.Provider value={{
             addToCart,
@@ -94,7 +98,7 @@ function ContextProvider({children}) {
             womensClothingItems,
             removeFromCart,
             removeSingleItem,
-            
+            emptyCart
         }}>
             {children}
         </Context.Provider>

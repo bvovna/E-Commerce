@@ -5,6 +5,7 @@ header{
     background: #edae49;
     color: #202020;
     font-family: 'Roboto', 'sans-serif';
+    height: 10vh;
   }
   
   .header__title{
@@ -20,6 +21,16 @@ header{
     text-decoration: none;
     color: inherit;
   }
+ 
+  .header__nav{
+    display: flex;
+    list-style: none;
+    align-self: center;
+  }
+
+  li{
+    padding: 1em;
+    font-weight: 500;
+  }
 
  
-  
