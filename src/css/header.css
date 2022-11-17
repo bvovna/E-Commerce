@@ -1,20 +1,27 @@
 header{
     display: flex;
-    align-items: baseline;
     justify-content: space-between;
     background: #edae49;
     color: #202020;
-    font-family: 'Roboto', 'sans-serif';
+    font-family: 'Montserrat', 'sans-serif';
     height: 10vh;
+    position: relative;
   }
   
   .header__title{
     margin: 1em;
+    font-weight: 400;
+  }
+
+  .header__first__link{
+    position: absolute;
+    left: 40%;
   }
 
   .cart__icon{
     padding: 1em;
     font-size: 1.5rem;
+    margin-right: auto
   }
 
   .link{
@@ -26,11 +33,13 @@ header{
     display: flex;
     list-style: none;
     align-self: center;
+    padding: 0 0.3em;
   }
 
   li{
-    padding: 1em;
+    padding: 0.5em;
     font-weight: 500;
+    font-size: 0.9rem;
   }
 
  

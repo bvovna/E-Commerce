@@ -5,7 +5,10 @@ import '../css/header.css'
 export default function Header (){
     return (
             <header>
-                <Link to="/" className="link one"><h2 className="header__title">Everest shop</h2></Link>
+                <Link to="/" className="link header__first__link">
+                    <h2 className="header__title"><i className="fa-solid fa-mountain-sun"></i> 
+                     {" "}Everest shop</h2>
+                </Link>
                 <ul className="header__nav">
                     <Link className="link" to="/electronics"><li>Electronics</li></Link>
                     <Link className="link" to="/jewelery"><li>Jewelery</li></Link>

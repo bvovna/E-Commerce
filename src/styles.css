@@ -1,6 +1,6 @@
 body{
   margin: 0;
-  font-family: 'Roboto', 'sans-serif';
+  font-family: 'Montserrat', 'sans-serif';
 }
 
 .items{
@@ -8,11 +8,13 @@ body{
   flex-wrap: wrap;
   justify-content: center;
   padding: 2em;
+  background: #edae49;
 }
 
 .item__container{
   position: relative;
   border: 1px solid #D3D3D3;
+  background: white;
   border-radius: 10px;
   width: 25%;
   padding: 0 1em 1em 1em;
@@ -43,6 +45,7 @@ body{
   font-size: 0.9rem;
   justify-content: space-around;
   align-items: center;
+  font-weight: 600;
 }
 
 .item__title{
