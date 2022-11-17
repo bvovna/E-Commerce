@@ -30,7 +30,7 @@ export default function Cart(){
     const checkout = totalPrice>0?
     <div  className="cart__total">
         <p>Total: {totalPrice.toFixed(2)}€</p>
-        <button onClick={placeOrder}className="btn checkout__btn">{buttonText}</button>
+        <button onClick={placeOrder}className="checkout__btn link">{buttonText}</button>
     </div>: 
         <p className="cart__total">Please add items to your cart</p>
  

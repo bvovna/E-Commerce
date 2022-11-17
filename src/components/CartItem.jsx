@@ -14,9 +14,9 @@ export default function CartItem({item}){
         <p>{roundedPrice}€</p>
         <i onClick={() => removeFromCart(item.id)}className="fa-solid fa-trash delete__item"></i>
             <div className="quantity">
-                <button onClick={() => removeSingleItem(item.id)}>-</button>
+                <button onClick={() => removeSingleItem(item.id)}  className="cartAdd">-</button>
                 <span>{item.quantity}</span>
-                <button onClick={() => addToCart(item)}>+</button>
+                <button onClick={() => addToCart(item)} className="cartAdd">+</button>
             </div>
         </div>
 }

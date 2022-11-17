@@ -1,7 +1,7 @@
 import React, {useContext} from "react"
-import '../css/categories.css'
 import {BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom';
 import { Context } from "../Context";
+import '../css/categories.css'
 
 
 export default function Categories(){
@@ -10,7 +10,7 @@ export default function Categories(){
 
     const renderCategories = categories.map((category, index) => {
         if(category==="mensclothing"){
-            return <Link key={index}to={`/${category}`} className={`link ${category}`}><div className="category">Men's clothing</div></Link>
+            return <Link key={index}to={`/${category}`} className={`${category} link`}><div className="category">Men's clothing</div></Link>
         }
         if(category==="womensclothing"){
             return <Link key={index}to={`/${category}`} className={`link ${category}`}><div className="category">Women's clothing</div></Link>

@@ -14,7 +14,7 @@ export default function CategoryItem({item}){
                 <p><i className="fa-solid fa-star item__star"></i> {item.rating.rate}/5 ({item.rating.count})</p>
                 <div className="item__info">
                     <p className="item__price">Price: {item.price}€</p>
-                    <button onClick={() => addToCart(item)} className="item__button">Add to cart</button>
+                    <button onClick={() => addToCart(item)} className="item__button link">Add to cart</button>
                 </div>
             </div>
 }

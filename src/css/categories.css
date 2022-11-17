@@ -1,33 +1,3 @@
-.parent__categories{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.categories{
-    display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
-    gap: 5em;
-    margin: 2em;
-}
-
-.category{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    height: 200px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 2rem;
-}
-
-.link{
-text-decoration: none;
-color: inherit;
-}
-
 .electronics,
 .jewelery,
 .mensclothing,
@@ -42,15 +12,14 @@ background-image: url(../img/electronics.jpg);
 }
 
 .jewelery{
-    background-image: url(../img/jewelery.jpg);
+  background-image: url(../img/jewelery.jpg);
 }
 
 .mensclothing{
-    background-image: url(../img/mensclothing.jpg);
+  background-image: url(../img/mensclothing.jpg);
 
 }
 
 .womensclothing{
-    background-image: url(../img/womensclothing.jpg);
-
+  background-image: url(../img/womensclothing.jpg);
 }
