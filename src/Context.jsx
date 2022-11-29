@@ -7,7 +7,7 @@ function ContextProvider({children}) {
     const [categories, setCategories] = useState([])
     const [allProductsData, setAllProductsData] = useState([])
   
-  
+
     useEffect(() => {
       fetch('https://fakestoreapi.com/products/categories')
             .then(res=>res.json())
