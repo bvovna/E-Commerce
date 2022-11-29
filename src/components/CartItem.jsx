@@ -9,14 +9,16 @@ export default function CartItem({item}){
     
 
     return <div className="cart__item">
-        <img className="cart__img"src={item.image} alt="item image"/>
-        <p>{item.title}</p>
-        <p>{roundedPrice}€</p>
-        <i onClick={() => removeFromCart(item.id)}className="fa-solid fa-trash delete__item"></i>
-            <div className="quantity">
-                <button onClick={() => removeSingleItem(item.id)}  className="cartAdd">-</button>
-                <span>{item.quantity}</span>
-                <button onClick={() => addToCart(item)} className="cartAdd">+</button>
+                <div className="cart__item__description">
+                    <img className="cart__img"src={item.image} alt="item image"/>
+                    <p>{item.title}</p>
+                </div>
+                <i onClick={() => removeFromCart(item.id)}className="fa-solid fa-trash delete__item"></i>
+                <div className="quantity">
+                    <p className="cart__item__price">{roundedPrice}€</p>
+                    <button onClick={() => removeSingleItem(item.id)}  className="cartAdd">-</button>
+                    <span>{item.quantity}</span>
+                    <button onClick={() => addToCart(item)} className="cartAdd">+</button>
+                </div>
             </div>
-        </div>
 }

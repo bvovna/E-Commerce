@@ -27,7 +27,7 @@ export default function Cart(){
     
     }, 0)
 
-    const checkout = totalPrice>0?
+    const checkout = totalPrice > 0 ?
     <div  className="cart__total">
         <p>Total: {totalPrice.toFixed(2)}€</p>
         <button onClick={placeOrder}className="checkout__btn link">{buttonText}</button>

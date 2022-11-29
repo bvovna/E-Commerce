@@ -1,7 +1,6 @@
 import React, {useContext} from "react"
 import {BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom';
 import { Context } from "../Context";
-import '../css/categories.css'
 
 
 export default function Categories(){
@@ -15,7 +14,7 @@ export default function Categories(){
         if(category==="womensclothing"){
             return <Link key={index}to={`/${category}`} className={`link ${category}`}><div className="category">Women's clothing</div></Link>
         }
-        return <Link key={index}to={`/${category}`} className={`link ${category}`}><div className="category">{category}</div></Link>
+        return <Link key={index} to={`/${category}`} className={`link ${category}`}><div className="category">{category}</div></Link>
     })
 
     return <div className="parent__categories">

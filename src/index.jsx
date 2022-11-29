@@ -8,9 +8,9 @@ import {ContextProvider} from "./Context"
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
-    <ContextProvider>
-    <App />
-    </ContextProvider>
+      <ContextProvider>
+        <App />
+      </ContextProvider>
     </Router>
   </React.StrictMode>
   

@@ -5,7 +5,7 @@ import { Context } from '../Context';
 export default function Header (){
 
     const {cartItems} = useContext(Context)
-    const cartIcon = cartItems.length >0?<i className="fa-solid fa-cart-shopping cart__icon"></i>:
+    const cartIcon = cartItems.length > 0 ? <i className="fa-solid fa-cart-shopping cart__icon"></i>:
     <i className="fa-solid fa-cart-plus cart__icon"></i>
 
     return (

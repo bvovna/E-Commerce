@@ -1,6 +1,5 @@
 import React, {useState, useContext} from "react"
 import {Context} from "../Context"
-import CartItem from './CartItem'
 
 
 export default function CategoryItem({item}){

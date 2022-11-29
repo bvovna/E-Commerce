@@ -1,14 +1,17 @@
 import React, {useState, useEffect} from "react";
-import {BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom';
-import Cart from './pages/Cart'
+import {BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom'
+
 import Categories from './components/Categories'
 import Header from './components/Header'
-import "./styles.css";
-import Electronics from "./pages/Electronics";
-import Jewelery from "./pages/Jewelery";
+
+import Cart from './pages/Cart'
+import Electronics from "./pages/Electronics"
+import Jewelery from "./pages/Jewelery"
 import MensClothing from './pages/MensClothing'
 import WomensClothing from './pages/WomensClothing'
-import Home from "./pages/Home";
+import Home from "./pages/Home"
+
+import "./css/styles.css"
 
 export default function App() {
       return (
@@ -23,7 +26,7 @@ export default function App() {
               <Route path="/mensclothing" element={<MensClothing/>}/>
               <Route path="/womensclothing" element={<WomensClothing/>}/>
             </Routes>
-</>
+          </>
         );
   }
   
